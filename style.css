@@ -27,6 +27,26 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+button {
+    appearance: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0em;
+    font: initial;
+    padding: 0px;
+    border: none; 
+    font-family: 'Kumbh Sans', sans-serif;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -72,11 +92,14 @@ body {
     letter-spacing: 0px;
     color: var(--gray-light);
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
     position: relative;
     box-sizing: border-box;
+    background-image: url(./assets/home/bg-pattern-header.svg);
+    background-repeat: no-repeat;
+    background-position: top -419px right -350px;
+    background-size: 1134px;
 }
 h1 {
     font-size: 56px;
@@ -84,7 +107,7 @@ h1 {
     font-weight: 700;
     line-height: 64px;
     letter-spacing: 0px;
-    color: var(--gray-light);
+    color: var(--gray-medium);
 }
 h2 {
     font-size: 20px;
@@ -92,7 +115,7 @@ h2 {
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0px;
-    color: var(--gray-light);
+    color: var(--gray-medium);
 }
 h3 {
     font-size: 16px;
@@ -101,31 +124,226 @@ h3 {
     line-height: 48px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--gray-medium)
+    color: white;
+}
+.btn-1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--blue);
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+button:hover{
+    background-color: #829CFF;
 }
 
-footer {
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 /* 	=====================
 	   DESKTOP 1440px
     =====================
 */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1023px) {
+main {
+    max-width: 1110px;
+    margin: auto;
+}
+.logo {
+    max-width: 155px;
+    margin-top: 81px;
+}
+.solution_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.get_solution {
+    max-width: 540px;
+}
+.get_solution h1 {
+    margin-top: 164px;
+}
+.get_solution p{
+    margin-top: 243px;
+    margin-bottom: 32px;
+}
+.chart {
+    margin-top: 92px;
+}
+.chart img{
+    width: 475px;
+}
+
+/* - FOOTER - */
+footer {
+    position: relative;
+    margin-top: 510px;
+    height: 603px;
+    background-color: var(--gray-dark);
+    background-image: url('./assets/home/bg-pattern-footer.svg');
+    background-repeat: no-repeat;
+    background-size: 2036px;
+    background-position: right 98px top -613px;
+}
+.cards_wrapper {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    transform: translateY(-50%);
+}
+.card_1, .card_2, .card_3  {
+    width: 350px;
+    height: 508px;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    text-align: center;
+    background: #FFFFFF;
+}
+.card_2 {
+    background: var(--blue);
+    background-image: url('./assets/home/bg-pattern-pricing.svg');
+    background-size: 880px;
+    background-position: center bottom 7px;
+    background-repeat: no-repeat;
+}
+.card_2 h1, .card_2 h2, .card_2 {
+    color: white;
+}
+.card_1 h2, .card_2 h2, .card_3 h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card_1 p:first-of-type, .card_3 p:first-of-type {
+    color: var(--gray-medium);
+}
+.card_1 p:first-of-type, .card_2 p:first-of-type, .card_3 p:first-of-type {
+    margin-top: 8px;
+    margin-bottom: 56px;
+}
+.card_info p:nth-child(2n+1), .card_info p:nth-child(2n+2){
+    margin-bottom: 16px;
+}
+.cards_wrapper p {
+    font-size: 16px;
+}
+.upper {
+    text-transform: uppercase;
+}
+.btn-2 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: rgb(81, 117, 255, 0.15);
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    margin-top: 16px;
+}
+.btn-2:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: rgb(81, 117, 255, 0.25);
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+}
+.btn-3 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    margin-top: 16px;
+}
+.btn-3:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    color: var(--light-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+}
+.counter_footer {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-173px);
+}
+.counter_date {
+    color: var(--blue);
+}
+.units {
+    text-transform: lowercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px
+}
+.counter {
+    width: 448px;
+    display: flex;
+    justify-content: space-between;
+}
+.days, .hours, .minutes, .seconds {
+    width: 100px;
+    height: 128px;
+    color: white;
+    background-color: var(--gray-medium);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 52px;
+    text-align: center;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
 
 
 }
-
 /* 	=====================
 	    MOBILE 375px
     =====================
 */
 @media(max-width:376px) {
-
 
 
 }

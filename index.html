@@ -10,46 +10,74 @@
 
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
-<body> 
-  A simple solution to complex tasks is coming soon
+  <body>
+    <main>
+      <picture>
+        <img src="./assets/shared/logo.svg" alt="Logo Officelite" class="logo">
+      </picture>
+      <section class="solution_wrapper">
+        <div class="get_solution">
+          <h1>A simple solution to complex tasks is coming soon</h1>
+          <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
+          collaboration platform built with an intuitive interface to improve productivity.</p>
+          <button class="btn-1">Get Started</button>
+        </div>
+        <picture>
+          <img src="./assets/home/illustration-charts.svg" alt="Illustration-charts" class="chart">
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <div class="cards_wrapper">
+        <div class="card_1">
+          <h2>Basic</h2>
+          <h1>Free</h1>
+          <p>Up to 5 users for free</p>
+          <div class="card_info">
+            <p>Basic document collaboration</p>
+            <p>2 <span class="upper">gb</span> storage</p>
+            <p>Great security and support</p>
+          </div>
+          <button class="btn-2">Try for Free</button>
+        </div>
+        <div class="card_2">
+          <h2>Pro</h2>
+          <h1>$9.99</h1>
+          <p>Per user, billed monthly</p>
+          <div class="card_info">
+            <p>All essential integrations</p>
+            <p>50 <span class="upper">gb</span> storage</p>
+            <p>More control and insights</p>
+          </div>
+          <button class="btn-3">Try for Free</button>
+        </div>
+        <div class="card_3">
+          <h2>Ultimate</h2>
+          <h1>$19.99</h1>
+          <p>Per user, billed monthly</p>
+          <div class="card_info">
+            <p>Robust work management</p>
+            <p>100 <span class="upper">gb</span> storage</p>
+            <p>VIP support</p>
+          </div>
+          <button class="btn-2">Try for Free</button>
+        </div>
+      </div>
+      <div class="counter_footer">
+        <div class="counter_wrapper">
+          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <h3>Coming <span class="counter_date">4 Nov 2020</span></h3>
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
-
-  Get Started
-
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
-
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
-
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
-</body>
+          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+          <div class="counter">
+            <div class="days">47<div class="units">Days</div></div>
+            <div class="hours">07<div class="units">Hours</div></div>
+            <div class="minutes">56<div class="units">Min</div></div>
+            <div class="seconds">14<div class="units">Sec</div></div>
+          </div>
+        </div>
+        <button class="btn-1">Get Started</button>
+      </div>
+    </footer>
+  </body>
 </html>
