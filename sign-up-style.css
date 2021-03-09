@@ -1,0 +1,165 @@
+:root {
+    --blue: #5175FF;
+    --light-blue: #829CFF;
+    --gray-light: #747B95;
+    --gray-medium: #333950;
+    --gray-dark: #25293A;
+    --red: #F05B5B;
+}
+/* || CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0em;
+    font: initial;
+    padding: 0px;
+    border: none; 
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+main {
+    flex-grow: 1;
+}
+
+/* ||  GENERAL STYLES*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--gray-light);
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    position: relative;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0px;
+    color: var(--gray-medium);
+}
+h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--gray-medium);
+}
+h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+.btn-1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--blue);
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+button:hover{
+    background-color: #829CFF;
+}
+
+/* 	=====================
+	   DESKTOP 1440px
+    =====================
+*/
+@media screen and (min-width: 1023px) {
+main {
+    max-width: 1110px;
+    margin: auto;
+}
+.logo {
+    max-width: 155px;
+    margin-top: 81px;
+
+}
+/* 	=====================
+	    MOBILE 375px
+    =====================
+*/
+@media(max-width:376px) {
+
+
+}

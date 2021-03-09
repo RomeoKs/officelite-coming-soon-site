@@ -20,7 +20,7 @@
           <h1>A simple solution to complex tasks is coming soon</h1>
           <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
           collaboration platform built with an intuitive interface to improve productivity.</p>
-          <button class="btn-1">Get Started</button>
+          <a href="./sign-up.html"><button class="btn-1">Get Started</button></a>
         </div>
         <picture>
           <img src="./assets/home/illustration-charts.svg" alt="Illustration-charts" class="chart">
@@ -38,7 +38,7 @@
             <p>2 <span class="upper">gb</span> storage</p>
             <p>Great security and support</p>
           </div>
-          <button class="btn-2">Try for Free</button>
+          <a href="./sign-up.html"><button class="btn-2">Get Started</button></a>
         </div>
         <div class="card_2">
           <h2>Pro</h2>
@@ -49,7 +49,7 @@
             <p>50 <span class="upper">gb</span> storage</p>
             <p>More control and insights</p>
           </div>
-          <button class="btn-3">Try for Free</button>
+          <a href="./sign-up.html"><button class="btn-3">Get Started</button></a>
         </div>
         <div class="card_3">
           <h2>Ultimate</h2>
@@ -60,24 +60,38 @@
             <p>100 <span class="upper">gb</span> storage</p>
             <p>VIP support</p>
           </div>
-          <button class="btn-2">Try for Free</button>
+          <a href="./sign-up.html"><button class="btn-2">Get Started</button></a>
         </div>
       </div>
       <div class="counter_footer">
         <div class="counter_wrapper">
-          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-          <h3>Coming <span class="counter_date">4 Nov 2020</span></h3>
-
-          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
           <div class="counter">
-            <div class="days">47<div class="units">Days</div></div>
-            <div class="hours">07<div class="units">Hours</div></div>
-            <div class="minutes">56<div class="units">Min</div></div>
-            <div class="seconds">14<div class="units">Sec</div></div>
+            <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+            <h3>Coming <span class="counter_date">4 Nov 2020</span></h3>
+
+            <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Min</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Sec</div>
+              </div>
           </div>
         </div>
-        <button class="btn-1">Get Started</button>
+        <a href="./sign-up.html"><button class="btn-1">Get Started</button></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
