@@ -120,7 +120,7 @@ h3 {
     line-height: 48px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: white;
+    color:var(--gray-medium);
 }
 .btn-1 {
     font-family: 'Kumbh Sans', sans-serif;
@@ -153,6 +153,211 @@ main {
 .logo {
     max-width: 155px;
     margin-top: 81px;
+
+}
+.background {
+    width: 420px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: var(--gray-dark);
+    background-image: url('./assets/sign-up/bg-pattern-side.svg');
+    background-size: 2036px;
+    background-repeat: no-repeat;
+    background-position: left -763px top -781px;
+    z-index: -1;
+}
+.container {
+    width: 100%;
+    height: 508px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 143px;
+}
+.offer {
+    width: 526px;
+}
+p {
+    margin-top: 23px;
+    margin-bottom: 40px;
+}
+h1 {
+    margin-top: -50px;
+}
+h3 {
+    margin-bottom: 7px;
+}
+
+/* -- COUNTER --*/
+.counter_date {
+    color: var(--blue);
+}
+.counter_wrapper {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+    width: 100px;
+    height: 128px;
+    color: var(--blue);
+    background: rgb(81, 117, 255, 0.15);;
+    border-radius: 13px; 
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 52px;
+    text-align: center;
+	display: inline-block;
+    margin-right: 10px;
+}
+
+#clockdiv div > span{
+	padding-top: 30px;
+	display: inline-block;
+}
+
+.smalltext{
+    text-transform: lowercase;
+    color: var(--gray-medium);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 0px;
+}
+/* -- FORM -- */
+.form_wrapper {
+    width: 445px;
+    height: 508px;
+    background-color: white;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    transform: translateY(-27px);
+}
+form {
+    width: 360px;
+    margin: auto;
+}
+input[type=submit] {
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--blue);
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(116, 123, 149, 0.5);
+}
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(116, 123, 149, 0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(116, 123, 149, 0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba(116, 123, 149, 0.5);
+}
+
+input[type=text], input[type=email], 
+input[type=tel], select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    letter-spacing: 0px;
+    margin-top: 24px;
+    padding-top: 17px;
+    padding-left: 16px;
+    padding-bottom: 17px;
+}
+select {
+    font-weight: 700;
+    padding-left: 16px;
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select.select {
+    background: url('./assets/sign-up/icon-arrow-down.svg');
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+select:focus {
+    border: none;
+    outline: 0;
+}
+.option_value {
+    color: rgba(116, 123, 149, 0.5);
+}
+input:focus {
+    border: none;
+    outline: 0;
+}
+.select option {
+    width: 100%;
+    border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+    background-image: url('./assets/sign-up/icon-check.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/* input:focus, select:focus, textarea:focus, form:focus, button:focus {outline:0;} */
+
+input:required:focus:valid {
+    border-bottom: 1px solid var(--red);
+    background: url('./assets/sign-up/icon-check.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+input:focus:invalid {
+    border-bottom: 1px solid var(--red);
+    background: url('./assets/sign-up/icon-cross.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 /* 	=====================

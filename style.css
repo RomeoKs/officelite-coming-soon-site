@@ -304,70 +304,10 @@ footer {
     align-items: center;
     transform: translateY(-173px);
 }
+/* -- COUNTER --*/
 .counter_date {
     color: var(--blue);
 }
-/* .smalltext {
-    text-transform: lowercase;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    padding-top: 15px;
-}
-.counter {
-    width: 448px;
-    display: flex;
-    justify-content: space-between;
-    display: inline-block;
-}
-.days, .hours, .minutes, .seconds {
-    width: 100px;
-    height: 128px;
-    color: white;
-    background-color: var(--gray-medium);
-    border-radius: 13px; 
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 52px;
-    text-align: center;
-    padding-top: 32px;
-}
-.counter_cards {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-}
-
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: #00BF96;
-	display: inline-block;
-}
-
-#counter .counter_cards > span{
-    width: 448px;
-	padding: 15px;
-	border-radius: 3px;
-	background: #00816A;
-	display: inline-block;
-}
-
-.smalltext{
-	
-	font-size: 16px;
-} */
 .counter_wrapper {
     width: 1110px;
     display: flex;

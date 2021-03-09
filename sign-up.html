@@ -12,34 +12,57 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
+  <div class="background"></div>
   <main>
-    <div class="background"></div>
     <picture>
       <img src="./assets/shared/logo.svg" alt="Logo Officelite" class="logo">
-    </picture>
-    Work smarter. Save time.
+    </picture>  
+    <div class="container">
+      <div class="offer">
+        <h1>Work smarter. Save time.</h1>
+        <p>Easily manage your projects. Get on the list and receive in-app perks available only to 
+        early subscribers. We are moving into final development and getting ready for official launch soon.</p>
 
-    Easily manage your projects. Get on the list and receive in-app perks available only to 
-    early subscribers. We are moving into final development and getting ready for official launch soon.
+        <div class="counter">
+          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <h3>Coming <span class="counter_date">4 Nov 2020</span></h3>
 
-    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-    Coming 4 Nov 2020
-
-    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-    47 Days
-    07 Hours
-    56 Min
-    14 Sec
-
-    Name
-    Email Address
-    Basic Pack Free
-    Basic Pack Free
-    Pro Pack $9.99
-    Ultimate Pack $19.99
-    Phone Number
-    Company
-    Get on the list
+          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+          <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Min</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Sec</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="form_wrapper">
+      <form>
+        <input type="text" id="name" title="Name" required name="fullName" placeholder="Name">
+        <input type="email" id="email" title="Email" required name="email" placeholder="Email">
+        <select class="select">
+          <option value="basic">Basic Free</option>
+          <option value="pro">Pro $9.99</option>
+          <option class="ultimate">Ultimate $19.99</option>
+        </select>
+        <input type="tel" id='phone' required placeholder="Phone">
+        <input type="text" id='company' required placeholder="Company">
+        <input type="submit" name="submit" value="Get on the list">
+      </form>
+    </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
