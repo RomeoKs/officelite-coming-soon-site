@@ -38,8 +38,31 @@ function initializeClock(id, endtime) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-//const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-const timeInMinutes = 68156.24;
+//const deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
+const timeInMinutes = 2592000000;
 const currentTime = Date.parse(new Date());
-const deadline = new Date(currentTime + timeInMinutes*60*1000);
+const deadline = new Date(currentTime + timeInMinutes);
 initializeClock('clockdiv', deadline);
+/* document.querySelector('.counter_date').innerHTML = deadline; */
+
+//Get date forward to launch
+const d = new Date()
+const year = d.getFullYear()
+const date = d.getDate()
+const monthsM = [
+  'Jan',
+  'Feb',
+  'March',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec'
+]
+const monthIndex = d.getMonth()
+const monthName = monthsM[monthIndex+1]
+document.querySelector('.counter_date').innerHTML =  `${date} ${monthName} ${year}`;
