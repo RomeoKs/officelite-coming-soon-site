@@ -359,6 +359,207 @@ footer {
     =====================
 */
 @media(max-width:376px) {
+main {
+    max-width: 327px;
+    margin: auto;
+}
+.logo {
+    max-width: 155px;
+    margin: auto;
+    margin-top: 81px;
+}
+.solution_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.get_solution {
+    max-width: 540px;
+}
+.get_solution h1 {
+    margin-top: 164px;
+}
+.get_solution p{
+    margin-top: 243px;
+    margin-bottom: 32px;
+}
+.chart {
+    margin-top: 92px;
+}
+.chart img{
+    width: 475px;
+}
 
+/* - FOOTER - */
+footer {
+    position: relative;
+    margin-top: 510px;
+    height: 603px;
+    background-color: var(--gray-dark);
+    background-image: url('./assets/home/bg-pattern-footer.svg');
+    background-repeat: no-repeat;
+    background-size: 2036px;
+    background-position: right 98px top -613px;
+}
+.cards_wrapper {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    transform: translateY(-50%);
+}
+.card_1, .card_2, .card_3  {
+    width: 350px;
+    height: 508px;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    text-align: center;
+    background: #FFFFFF;
+}
+.card_2 {
+    background: var(--blue);
+    background-image: url('./assets/home/bg-pattern-pricing.svg');
+    background-size: 880px;
+    background-position: center bottom 7px;
+    background-repeat: no-repeat;
+}
+.card_2 h1, .card_2 h2, .card_2 {
+    color: white;
+}
+.card_1 h2, .card_2 h2, .card_3 h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card_1 p:first-of-type, .card_3 p:first-of-type {
+    color: var(--gray-medium);
+}
+.card_1 p:first-of-type, .card_2 p:first-of-type, .card_3 p:first-of-type {
+    margin-top: 8px;
+    margin-bottom: 56px;
+}
+.card_info p:nth-child(2n+1), .card_info p:nth-child(2n+2){
+    margin-bottom: 16px;
+}
+.cards_wrapper p {
+    font-size: 16px;
+}
+.upper {
+    text-transform: uppercase;
+}
+.btn-2 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: rgb(81, 117, 255, 0.15);
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    margin-top: 16px;
+}
+.btn-2:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: rgb(81, 117, 255, 0.25);
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+}
+.btn-3 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    margin-top: 16px;
+}
+.btn-3:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    color: var(--light-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+}
+.counter_footer {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-173px);
+}
+/* -- COUNTER --*/
+.counter_date {
+    color: var(--blue);
+}
+.counter_wrapper {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+    width: 100px;
+    height: 128px;
+    color: white;
+    background-color: var(--gray-medium);
+    border-radius: 13px; 
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 52px;
+    text-align: center;
+	display: inline-block;
+    margin-right: 10px;
+}
+
+#clockdiv div > span{
+	padding-top: 30px;
+	display: inline-block;
+}
+
+.smalltext{
+    text-transform: lowercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 0px;
+}
 
 }
