@@ -359,7 +359,10 @@ footer {
     =====================
 */
 @media(max-width:376px) {
-
+body {
+    background-position: top -170px right -41px;
+    background-size: 458px;
+}
 main {
     max-width: 327px;
     margin: auto;
