@@ -249,7 +249,9 @@ h3 {
 }
 form {
     width: 360px;
+    height: 321px;
     margin: auto;
+    margin-top: 18px;
 }
 input[type=submit] {
     width: 100%;
@@ -265,6 +267,9 @@ input[type=submit] {
     height: 56px;
     border-radius: 28px;
     border: none;
+    position: absolute;
+    width: 360px;
+    bottom: 51px;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: rgba(116, 123, 149, 0.5);
@@ -290,21 +295,21 @@ input[type=tel], select {
     font-weight: normal;
     line-height: 28px;
     letter-spacing: 0px;
-    margin-top: 24px;
-    padding-top: 17px;
+    margin-top: 11px;
+    padding-top: 10px;
     padding-left: 16px;
     padding-bottom: 17px;
 }
 select {
     font-weight: 700;
-    padding-left: 16px;
-    margin: 0;      
+    padding-left: 16px; 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
 select.select {
     background: url('./assets/sign-up/icon-arrow-down.svg');
     background-size: 11px;
@@ -315,20 +320,19 @@ select:focus {
     border: none;
     outline: 0;
 }
-.option_value {
-    color: rgba(116, 123, 149, 0.5);
-}
 input:focus {
     border: none;
     outline: 0;
 }
-.select option {
+option {
     width: 100%;
     border-bottom: 1px solid rgba(116, 123, 149, 0.5);
     background-image: url('./assets/sign-up/icon-check.svg');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: right;
+    border-radius: 20px;
+    padding: 10px;
 }
 /* input:focus, select:focus, textarea:focus, form:focus, button:focus {outline:0;} */
 
