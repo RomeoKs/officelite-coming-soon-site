@@ -150,7 +150,7 @@ button:hover{
 	   DESKTOP 1440px
     =====================
 */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
 main {
     max-width: 1110px;
     margin: auto;
@@ -222,9 +222,7 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.card_1 p:first-of-type, .card_3 p:first-of-type {
-    color: var(--gray-medium);
-}
+
 .card_1 p:first-of-type, .card_2 p:first-of-type, .card_3 p:first-of-type {
     margin-top: 8px;
     margin-bottom: 56px;
@@ -354,11 +352,262 @@ footer {
 }
 
 }
+
+
 /* 	=====================
-	    MOBILE 375px
+	    TABLET 768px
     =====================
 */
-@media(max-width:376px) {
+@media(min-width: 421px) and (max-width: 1023px) {
+body {
+    background-image: url(./assets/home/bg-pattern-header.svg);
+    background-repeat: no-repeat;
+    background-position: top -164px right -293px;
+    background-size: 666px;
+}
+main {
+    max-width: 689px;
+    margin: auto;
+}
+.logo {
+    max-width: 155px;
+    margin-top: 72px;
+}
+.solution_wrapper {
+    width: 689px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 93px;
+}
+.get_solution {
+    max-width: 540px;
+}
+.get_solution h1 {
+    font-size: 40px;
+    line-height: 48px;
+    width: 339px;
+}
+.get_solution p{
+    width: 345px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 22px;
+    margin-bottom: 23px;
+}
+.chart img{
+    max-width: 296px;
+    margin-top: 55px;
+}
+
+/* - FOOTER - */
+footer {
+    width: 100%;
+    position: relative;
+    margin-top: 638px;
+    height: 986px;
+    background-color: var(--gray-dark);
+    background-image: url('./assets/home/bg-pattern-footer.svg');
+    background-repeat: no-repeat;
+    background-size: 1454px;
+    background-position: left -343px top 15px;
+}
+.cards_wrapper {
+    max-width: 689px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transform: translateY(-50%);
+}
+
+.card_1, .card_2, .card_3  {
+    width: 689px;
+    height: 316px;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    background: #FFFFFF;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 358px 221px ;
+    box-sizing: border-box;
+    padding-top: 53px;
+    padding-left: 50px;
+    grid-template-areas:
+    "L1 R1"
+    "L2 R1";
+}
+.card_1, .card_2{
+    margin-bottom: 24px;
+}
+.cards_titles {
+    grid-area: L1;
+}
+.card_info {
+    grid-area: R1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+    line-height: 43px;
+}
+.btn-2 {
+    grid-area: L2;
+}
+.btn-3 {
+    grid-area: L2;
+}
+
+.card_2 {
+    background: var(--blue);
+    background-image: url('./assets/home/bg-pattern-pricing.svg');
+    background-size: 880px;
+    background-position: center bottom 7px;
+    background-repeat: no-repeat;
+}
+.card_2 h1, .card_2 h2, .card_2 {
+    color: white;
+}
+.cards_titles h2 {
+    margin-bottom: 15px;
+}
+.cards_titles h1 {
+    margin-bottom: 3px;
+}
+.cards_wrapper p {
+    font-size: 16px;
+}
+.upper {
+    text-transform: uppercase;
+}
+
+.btn-2 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: rgb(81, 117, 255, 0.15);
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    margin-top: 22px;
+}
+.btn-2:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: rgb(81, 117, 255, 0.25);
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+}
+.btn-3 {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    color: var(--blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+    margin-top: 22px;
+}
+.btn-3:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    color: var(--light-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 56px;
+    width: 171px;
+    border-radius: 28px;
+}
+.counter_footer {
+    max-width: 689px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-400px);
+}
+/* -- COUNTER --*/
+.counter_date {
+    color: var(--blue);
+}
+h3 {
+    text-align: center;
+    margin-bottom: 6px;
+}
+.counter_wrapper {
+    width: 689px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+    width: 100px;
+    height: 128px;
+    color: white;
+    background-color: var(--gray-medium);
+    border-radius: 13px; 
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 52px;
+    text-align: center;
+	display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 48px;
+}
+#clockdiv div > span{
+	padding-top: 30px;
+	display: inline-block;
+}
+
+.smalltext{
+    text-transform: lowercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 0px;
+}
+
+
+}
+/* 	=====================
+	    MOBILE 420px
+    =====================
+*/
+@media(max-width: 420px) {
 body {
     background-position: top -170px right -41px;
     background-size: 458px;
@@ -448,9 +697,7 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.card_1 p:first-of-type, .card_3 p:first-of-type {
-    color: var(--gray-medium);
-}
+
 .card_1 p:first-of-type, .card_2 p:first-of-type, .card_3 p:first-of-type {
     margin-top: 8px;
     margin-bottom: 56px;
