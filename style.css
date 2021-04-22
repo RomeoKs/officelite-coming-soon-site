@@ -192,7 +192,7 @@ main {
 /* - FOOTER - */
 footer {
     position: relative;
-    margin-top: 510px;
+    margin-top: 355px;
     height: 603px;
     background-color: var(--gray-dark);
     background-image: url('./assets/home/bg-pattern-footer.svg');
