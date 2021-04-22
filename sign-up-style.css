@@ -47,6 +47,7 @@ button {
     border: none; 
     font-family: 'Kumbh Sans', sans-serif;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -150,7 +151,7 @@ main {
     max-width: 1110px;
     margin: auto;
 }
-.logo {
+.logo img{
     max-width: 155px;
     margin-top: 81px;
 
@@ -160,6 +161,7 @@ main {
     height: 100vh;
     position: absolute;
     right: 0;
+    top: 0;
     background-color: var(--gray-dark);
     background-image: url('./assets/sign-up/bg-pattern-side.svg');
     background-size: 2036px;

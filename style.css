@@ -141,6 +141,14 @@ h3 {
     border-radius: 28px;
     box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 }
+.btn-1 a {
+    text-decoration: none;
+    color: white;
+}
+.btn-2 a, .btn-3 a{
+    text-decoration: none;
+    color: var(--blue);
+}
 button:hover{
     background-color: #829CFF;
 }
@@ -171,7 +179,7 @@ main {
     margin-top: 164px;
 }
 .get_solution p{
-    margin-top: 243px;
+    margin-top: 19px;
     margin-bottom: 32px;
 }
 .chart {
